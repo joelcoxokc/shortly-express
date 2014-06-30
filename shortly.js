@@ -87,6 +87,7 @@ app.post('/links', function(req, res) {
 // Write your authentication routes here
 /************************************************************/
 
+
 // render the login view
 app.get('/login', function(req, res){
   res.render('login');
@@ -129,6 +130,7 @@ app.get('/signup', function(req, res){
       // add the new user to the User collection
       // log the user in, setting the session
 app.post('/signup', function(req, res){
+  console.log('hello')
   new User({username: username, password: password}).fetch().then(function ( found ){
     if(found){
       console.log("User already Created")
