@@ -41,6 +41,8 @@ db.knex.schema.hasTable('clicks').then(function(exists) {
   }
 });
 
+// db.knex User Schema
+
 /************************************************************/
 // Add additional schema definitions below
 /************************************************************/
